@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Profil Lombok</title>
+
+    <!-- Pasang tema sebelum halaman tampil supaya tidak berkedip -->
+    <script>
+      (function () {
+        var theme = null;
+        try {
+          theme = localStorage.getItem("theme");
+        } catch (e) {}
+        if (!theme) {
+          theme =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+              ? "dark"
+              : "light";
+        }
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;800&family=Quicksand:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Lombok</h1>
+
+        <p>
+          Pulau Lombok adalah salah satu pulau besar di Provinsi Nusa Tenggara
+          Barat, Indonesia, yang terkenal dengan keindahan alam, budaya Suku
+          Sasak, dan julukan Pulau Seribu Masjid.
+        </p>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#sejarah">Sejarah</a></li>
+        <li><a href="#geografis">Geografis</a></li>
+        <li><a href="#wisata">Wisata</a></li>
+        <li>
+          <a href="https://www.dicoding.com/users/rnaldyx_as"
+            >Profil Dicoding</a
+          >
+        </li>
+      </ul>
+      <button id="theme-toggle" type="button" aria-label="Ganti tema">
+        🌙
+      </button>
+      <div id="progress"></div>
+    </nav>
+
+    <main>
+      <div id="content">
+        <article id="sejarah" class="card">
+          <h2>Sejarah</h2>
+          <img
+            src="assets/purameru.jpg"
+            alt="Pura Meru di Mataram, Lombok"
+            class="featured-image"
+          />
+          <p>
+            Nama Lombok diyakini berasal dari kata dalam bahasa Jawa Kuno,
+            lombok, yang berarti lurus atau jujur. Pulau ini sudah dihuni sejak
+            lama oleh Suku Sasak, dan namanya tercatat dalam kitab
+            Negarakertagama (1365) sebagai salah satu wilayah yang berhubungan
+            dengan Majapahit. Sebelum pengaruh luar menguat, Lombok terbagi
+            menjadi beberapa kerajaan lokal, seperti Selaparang, Pejanggik,
+            Pematang, Langko, dan Bayan. Pada abad ke-16, Islam masuk ke Lombok
+            melalui para penyebar agama dari Jawa, dan menjadi dasar budaya
+            masyarakat Sasak hingga kini.
+          </p>
+
+          <p>
+            Pada abad ke-17 hingga ke-18, pengaruh Kerajaan Karangasem dari Bali
+            mulai masuk ke Lombok dan menguasai sebagian besar wilayahnya,
+            sehingga kerajaan-kerajaan Sasak melemah. Kekuasaan ini berlangsung
+            sampai tahun 1894, ketika Belanda melancarkan ekspedisi militer ke
+            Lombok dan mengakhiri kekuasaan Bali di pulau ini. Setelah itu,
+            Lombok berada di bawah pemerintahan kolonial Belanda sampai masuknya
+            Jepang pada tahun 1942. Setelah Indonesia merdeka, Lombok menjadi
+            bagian dari Provinsi Nusa Tenggara Barat yang dibentuk pada tahun
+            1958.
+          </p>
+        </article>
+
+        <article id="geografis" class="card">
+          <h2>Geografis</h2>
+          <img
+            src="assets/rinjani.jpg"
+            alt="Gunung Rinjani, Lombok"
+            class="featured-image"
+          />
+          <p>
+            Pulau Lombok terletak di Provinsi Nusa Tenggara Barat, dibatasi
+            Selat Bali di sebelah barat, Selat Alas di sebelah timur, Laut Jawa
+            di sebelah utara, dan Samudra Hindia di sebelah selatan. Luas
+            pulaunya sekitar 4.725 km², dengan Kota Mataram sebagai ibu kota
+            provinsi. Di bagian utara berdiri Gunung Rinjani setinggi 3.726
+            meter di atas permukaan laut, gunung berapi tertinggi kedua di
+            Indonesia, yang memiliki danau kaldera bernama Segara Anak. Bagian
+            tengah pulau berupa dataran rendah yang subur dan menjadi pusat
+            pertanian, sedangkan bagian selatan didominasi perbukitan kering
+            dengan garis pantai berpasir putih.
+          </p>
+          <p>
+            Lombok beriklim tropis dengan dua musim, yaitu musim hujan yang
+            berlangsung kira-kira dari November hingga April dan musim kemarau
+            pada bulan-bulan sisanya. Wilayah selatan dan timur cenderung lebih
+            kering dibandingkan wilayah utara yang lebih lembap karena
+            dipengaruhi Gunung Rinjani. Secara administratif, pulau ini terbagi
+            menjadi Kota Mataram, Kabupaten Lombok Barat, Lombok Tengah, Lombok
+            Timur, dan Lombok Utara. Selat Lombok di sebelah barat juga dikenal
+            sebagai bagian dari Garis Wallace, batas persebaran flora dan fauna
+            antara wilayah Asia dan Australasia.
+          </p>
+        </article>
+
+        <article id="wisata" class="card">
+          <h2>Wisata</h2>
+          <p>
+            Lombok menjadi salah satu tujuan wisata favorit di Indonesia berkat
+            pantai-pantainya yang indah dan suasana pulau yang masih asri.
+            Selain wisata alam, Lombok juga dikenal dengan budaya Suku Sasak dan
+            kawasan Mandalika yang kini menjadi destinasi wisata unggulan.
+          </p>
+
+          <section>
+            <h3>Gili Trawangan</h3>
+            <img
+              src="/assets/gilitrawangan.jpg"
+              alt="Gili Trawangan"
+              class="featured-image"
+            />
+            <p>
+              Gili Trawangan adalah pulau kecil di barat laut Lombok yang
+              menjadi destinasi utama wisatawan lokal maupun mancanegara. Pulau
+              ini bebas dari kendaraan bermotor, sehingga pengunjung berkeliling
+              dengan sepeda atau cidomo, kereta kuda khas setempat. Airnya yang
+              jernih dan terumbu karangnya sangat cocok untuk snorkeling,
+              menyelam, dan melihat penyu laut dari dekat.
+            </p>
+          </section>
+
+          <section>
+            <h3>Pantai Kuta Mandalika</h3>
+            <img
+              src="/assets/Kutalombok.jpg"
+              alt="Pantai Kuta Mandalika"
+              class="featured-image"
+            />
+            <p>
+              Pantai Kuta Mandalika berada di Lombok Tengah bagian selatan dan
+              terkenal dengan pasirnya yang berbutir seperti merica. Pantai ini
+              dikelilingi perbukitan hijau dan berada di kawasan Mandalika, yang
+              juga memiliki sirkuit balap internasional. Nama Mandalika berasal
+              dari legenda Putri Mandalika, yang diceritakan oleh masyarakat
+              Sasak dan dirayakan setiap tahun lewat tradisi Bau Nyale.
+            </p>
+          </section>
+
+          <section>
+            <h3>Sembalun</h3>
+            <img
+              src="/assets/sembalun.jpg"
+              alt="Sembalun, Lombok Timur"
+              class="featured-image"
+            />
+            <p>
+              Sembalun adalah kawasan dataran tinggi di Lombok Timur yang
+              terletak di kaki Gunung Rinjani, pada ketinggian sekitar 1.100
+              meter di atas permukaan laut. Udaranya sejuk dan pemandangannya
+              berupa lembah hijau yang dikelilingi perbukitan dan Gunung Rinjani
+              yang menjulang. Sembalun juga menjadi salah satu pintu masuk utama
+              pendakian Rinjani, dan di sekitarnya ada Bukit Selong dan Bukit
+              Pergasingan yang cocok untuk menikmati matahari terbit. Daerah ini
+              dikenal pula sebagai penghasil stroberi dan bawang putih, sehingga
+              wisatawan bisa menikmati wisata alam sekaligus wisata kebun.
+            </p>
+          </section>
+
+          <section>
+            <h3>Pantai Tanjung Aan</h3>
+            <img
+              src="/assets/Pantai-Tanjung-Aan.jpg"
+              alt="Pantai Tanjung Aan"
+              class="featured-image"
+            />
+            <p>
+              Pantai Tanjung Aan terletak di kawasan selatan Lombok, tidak jauh
+              dari Bukit Merese dan kawasan Mandalika. Pantai ini terkenal
+              dengan keunikan dua jenis pasirnya, yaitu pasir putih yang sangat
+              halus di satu sisi dan pasir dengan butiran bulat menyerupai
+              merica di sisi lainnya. Garis pantainya melengkung membentuk teluk
+              yang menawan dengan air laut jernih bergradasi biru kehijauan,
+              serta ombak yang tenang sehingga sangat nyaman untuk berenang dan
+              bersantai menikmati pemandangan alam.
+            </p>
+          </section>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Pulau Lombok</h2>
+            <p>Pulau Seribu Masjid</p>
+            <figure>
+              <img
+                src="/assets/logo.jpg"
+                alt="Lambang Provinsi Nusa Tenggara Barat"
+                class="featured-image"
+              />
+              <figcaption>Lambang Provinsi Nusa Tenggara Barat</figcaption>
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi Lainnya</h3>
+
+            <table>
+              <tr>
+                <th>Negara</th>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <th>Luas Total</th>
+                <td>±4.725 km<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th>Bahasa Daerah</th>
+                <td>Sasak</td>
+              </tr>
+              <tr>
+                <th>Kode Telepon</th>
+                <td>+62 370</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Dari pulau seribu masjid, untuk dunia &amp; Indonesia</p>
+      <p class="footer-note">
+        &#169; 2021 Muhammad Renaldy AS &middot; Sistem Informasi, Universitas
+        Bumigora Mataram
+      </p>
+    </footer>
+
+    <button id="back-to-top" type="button" aria-label="Kembali ke atas">
+      ↑
+    </button>
+
+    <div
+      id="lightbox"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-label="Pratinjau gambar"
+    >
+      <img alt="" />
+    </div>
+  </body>
+</html>
